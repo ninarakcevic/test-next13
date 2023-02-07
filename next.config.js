@@ -3,6 +3,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-}
+  images: {
+    domains: ['image.tmdb.org', 'google.com'],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

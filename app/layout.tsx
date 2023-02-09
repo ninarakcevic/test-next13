@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import styles from './page.module.css';
 import './globals.css';
+import Image from 'next/image';
+
 import { Montserrat } from '@next/font/google';
 
-const montserratFont = Montserrat({
+const montserrat = Montserrat({
   weight: ['300', '700'],
   subsets: ['latin'],
   variable: '--font-montserrat',
@@ -18,12 +18,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       */}
       <head />
 
-      <body className={`${montserratFont.className} mx-32 my-12`}>
+      <body className={`${montserrat.className} bg-black text-white mx-32 my-12`}>
         <nav className="p-2">
           <Image
             src="/vercel.svg"
             alt="Vercel Logo"
-            className={styles.vercelLogo}
+            className="text-white"
             width={100}
             height={24}
             priority
